@@ -28,11 +28,13 @@ def three_sum(N):
                     l += 1
     return res
 
+
 def test():
     assert three_sum([-1, 0, 1, 2, -1, -4]) == [[-1, -1, 2], [-1, 0, 1]]
     assert three_sum([]) == []
     assert three_sum([0]) == []
     assert three_sum([0, 0, 0]) == [[0, 0, 0]]
 
-test()
 
+test()
+print("All test cases passed!")

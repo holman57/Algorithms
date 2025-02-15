@@ -2,6 +2,7 @@
 #   the nth node from the end of the list and return its head.
 
 # Definition for a Linked List node
+
 class LinkedListNode:
     def __init__(self, data, next=None):
         self.data = data
@@ -75,4 +76,6 @@ def compare_linked_lists(head1, head2):
         head2 = head2.next
     return head1 is None and head2 is None
 
+
 test_remove_nth_last_node()
+print("All test cases passed!")

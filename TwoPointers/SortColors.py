@@ -9,6 +9,7 @@
 #   same color are adjacent, with the colors in the order
 #   of red, white, and blue. To improve your problem-solving
 #   skills, do not utilize the built-in sort function.
+
 def sort_colors(colors):
     left = 0
     right = len(colors) - 1
