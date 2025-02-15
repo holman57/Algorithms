@@ -10,8 +10,7 @@ class LinkedListNode:
 
 
 def remove_nth_last_node(head, n):
-    fast = head
-    slow = head
+    fast, slow = head, head
     for _ in range(n):
         if fast is None:
             # n is greater than the length of the list
@@ -23,8 +22,7 @@ def remove_nth_last_node(head, n):
         return head.next
 
     while fast.next:
-        fast = fast.next
-        slow = slow.next
+        fast, slow = fast.next, slow.next
 
     slow.next = slow.next.next
     return head

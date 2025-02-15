@@ -11,9 +11,7 @@
 #   skills, do not utilize the built-in sort function.
 
 def sort_colors(colors):
-    left = 0
-    right = len(colors) - 1
-    i = 0
+    left, right, i = 0, len(colors) - 1, 0
 
     while i <= right:
         if colors[i] == 0:
